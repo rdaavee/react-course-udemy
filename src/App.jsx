@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import { MainApp } from './styled'
 
 function App() {
 
@@ -16,12 +16,12 @@ function App() {
     }, [count])
 
 return (
-    <div className="App">
-        Hello World!
+    <MainApp>
+        Click Me
         <button onClick={() => addNumber(count)}>
             count is {count}
         </button>
-    </div>
+    </MainApp>
     )
 }
 
